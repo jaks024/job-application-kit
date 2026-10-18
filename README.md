@@ -33,6 +33,8 @@ credentials, hosted service, or Notion token is bundled.
    cd job-application-kit
    ```
 
+   Run all terminal commands below from this cloned folder.
+
 2. Open this folder in your agent. Codex can discover `.agents/skills/`. Other
    agents can read `AGENTS.md` and the skill files directly. If you want Codex
    skills available from other folders, install local pointers:
@@ -66,22 +68,54 @@ credentials, hosted service, or Notion token is bundled.
 5. Connect a supported browser. Confirm the browser profile belongs to the
    candidate before using profile-based application services. Optionally connect
    Notion and choose the exact destination. Local tracking works without Notion.
+   Browser setup depends on your agent. Ask it to check its available browser
+   tools and explain how to connect if none are available. This kit does not
+   install a browser connection.
 
-6. Run a search, then authorize the applications you want:
-
-   > Use $job-kit-search for today's broad search, including my enabled internships.
-
-   > Use $job-kit-apply for these selected jobs with my reviewed master resume.
-   > Use a second agent to review. Leave final submission to me.
-
-7. Ask for interview preparation when needed:
-
-   > Use $job-kit-interview for this recruiter call. Use the submitted resume and
-   > posting, and research the interview process with dated sources.
+6. Follow **How to use** below. Setup does not start applications automatically.
 
 On Windows, PowerShell accepts the same commands. Use `py` instead of `python`
 if that is how Python is installed. Timezone support may require
 `python -m pip install tzdata`. The core tools otherwise use the standard library.
+
+## How to use
+
+After setup, talk to your agent. You do not need to run the record commands by hand.
+Keep this repository open, or use the installed skill pointers from another folder.
+
+1. **Find jobs.** Paste:
+
+   > Use $job-kit-search for today's broad search, including internships if enabled.
+   > Show the best matches, eligibility concerns, and anything you could not verify.
+
+2. **Choose and apply.** Name the jobs or provide their links:
+
+   > Use $job-kit-apply for these jobs with my reviewed master resume. Use a second
+   > agent to review. Leave final Submit to me.
+
+   The main agent fills the forms; the reviewer checks captured details. You may
+   need to sign in, verify an email, answer a missing fact, or accept an agreement.
+   The tools' current rules still apply.
+
+3. **Confirm the outcome.** After your final click, tell the agent whether the site
+   showed success or sent a confirmation email. For example:
+
+   > The application for [company and role] showed a submission confirmation.
+   > Record it and update my configured tracker.
+
+4. **Resume or check progress.** Paste:
+
+   > Check my tracker. What is confirmed submitted, and what still needs action?
+   > Continue the unfinished applications I already approved.
+
+5. **Prepare for an interview.** Paste:
+
+   > Use $job-kit-interview for [company and role]. Use the exact submitted resume
+   > and posting. Research common interview questions and help me prepare real examples.
+
+To change preferences or correct a fact, use `$job-kit-setup` again and describe
+the change. Existing records are preserved. Candidate files belong in the private
+workspace, never in this repository. Notion is optional; local tracking works alone.
 
 ## Resume setup
 
@@ -89,6 +123,9 @@ Use your own approved format. A blank LaTeX starter is in `templates/resume.tex`
 it is optional. Set the page target and page size for your field and country.
 Compile locally with a trusted LaTeX installation, or export from your editor.
 An editor preview is not proof that the PDF saved on disk is current.
+
+Copy or export the PDF to `inputs/Resume.pdf` inside your private workspace
+before running the commands below. Replace the example workspace path with yours.
 
 For a text-layer check, install `pypdf` or Poppler:
 
