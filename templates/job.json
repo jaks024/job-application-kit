@@ -1,0 +1,22 @@
+{
+  "provider": null,
+  "tenant": null,
+  "requisition_id": null,
+  "company": "Example Company",
+  "role": "Example Role",
+  "url": "https://careers.example.com/jobs/example-role",
+  "location": null,
+  "job_type": null,
+  "posted_at": null,
+  "posted_at_source": null,
+  "verified_at": null,
+  "availability": "unverified",
+  "description_file": null,
+  "salary": {"minimum": null, "maximum": null, "currency": null, "basis": null},
+  "sponsorship": {"assessment": "unknown", "quote": null, "source": null},
+  "requirements": [],
+  "candidate_evidence": [],
+  "gaps": [],
+  "priority_reason": null,
+  "referral": {"entry_url": null, "verified_signal": null}
+}

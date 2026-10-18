@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "timezone": null,
+  "browser": {"preferred": null, "profile_hint": null, "candidate_identity_verified": false},
+  "search": {
+    "role_families": [],
+    "adjacent_roles": [],
+    "industries": [],
+    "countries": [],
+    "preferred_locations": [],
+    "required_locations": [],
+    "remote_policy": null,
+    "job_types": [],
+    "sources": [],
+    "recent_days": 1,
+    "overlooked_days": 7,
+    "catchup_days": 30,
+    "experience_stretches": "flag",
+    "enrollment_mismatches": "flag",
+    "explicit_no_sponsorship": "ask",
+    "ambiguous_sponsorship": "flag",
+    "internship_locations": [],
+    "internship_minimum_pay": {"amount": null, "currency": null, "basis": null},
+    "unknown_internship_pay": "ask",
+    "excluded_employers": [],
+    "held_for_referral": []
+  },
+  "application": {
+    "master_resume": null,
+    "resume_policy": "master_with_confirmed_skills_variants",
+    "target_pages": null,
+    "cover_letter": "required_only",
+    "final_submit": "user",
+    "platform_submit_overrides": {},
+    "optional_marketing": "decline",
+    "demographic_preference": "ask",
+    "reviewer_requested": false
+  },
+  "tracker": {"kind": "local", "destination": null, "property_mapping": {}, "sync_authorized": false}
+}

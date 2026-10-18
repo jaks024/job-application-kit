@@ -1,0 +1,11 @@
+{
+  "event_id": "replace-with-a-new-uuid",
+  "job_key": "replace-with-key-returned-by-add-job",
+  "state": "Prepared",
+  "occurred_at": "2030-01-01T12:00:00+00:00",
+  "evidence_type": "operator_note",
+  "evidence": "Describe what was actually observed; use only confirmed facts.",
+  "resume_sha256": null,
+  "review_file": null,
+  "tracker_sync": "not_configured"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "confirmed_at": null,
+  "identity": {"legal_name": null, "preferred_name": null, "email": null, "phone": null, "location": null, "links": []},
+  "availability": {"start_date": null, "hours": null, "relocation": null, "travel": null, "schedule": null, "existing_commitments": []},
+  "education": [],
+  "employment": [],
+  "projects": [],
+  "skills": [],
+  "authorization": [],
+  "screening_answers": [],
+  "references": [],
+  "motivation_notes": [],
+  "unknowns": []
+}
